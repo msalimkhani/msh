@@ -16,7 +16,7 @@ int RunShell()
 	{
 	char *home = getenv("HOME");
 	cwd = replaceWord(cwd,home,"~");
-	printf("%s $ ",cwd);
+	printf("\033[32m%s\033[0m $ ",cwd);
 	//free(cwd);
 	}
 	else
@@ -24,4 +24,5 @@ int RunShell()
 		printf("getcwd error");
 		return 129;
 	}
+	return 0;
 }

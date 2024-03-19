@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <linux/limits.h>
-
+#define gotoxy(x,y) printf("\033[%d;%dH", (y), (x))
 typedef enum {false, true} bool;
 int readline(char *__buf);
 char *strremove(char *str, const char *sub);

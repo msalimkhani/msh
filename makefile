@@ -18,3 +18,7 @@ install-linux:
 	sudo cp bin/$(Pname) /usr/bin
 	sudo cp bin/$(Pname) /usr/lib
 	sudo cp bin/$(Pname) /usr/share
+install-termux:
+	cp bin/$(Pname) $(PREFIX)/bin
+	cp bin/$(Pname) $(PREFIX)/lib
+	cp bin/$(Pname) $(PREFIX)/share
