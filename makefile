@@ -11,7 +11,7 @@ obj/string.o:
 	$(CC) -c src/string.c -o obj/string.o
 obj/console-tools.o:
 	$(CC) -c src/console-tools.c -o obj/console-tools.o
-build:clean $(obj) libs/msh.h
+build:all clean $(obj) libs/msh.h
 	$(CC) $(obj) -I libs -o $(bin)
 clean:
 	rm -f obj/*.o
