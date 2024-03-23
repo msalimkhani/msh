@@ -2,6 +2,7 @@ CC = gcc
 Pname = msh
 obj = obj/main.o obj/cd.o obj/console-tools.o obj/string.o
 bin = bin/$(Pname)
+.PHONY = build
 obj/main.o:
 	$(CC) -c src/main.c -o obj/main.o
 obj/cd.o:
